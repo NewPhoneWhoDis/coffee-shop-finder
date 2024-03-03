@@ -76,6 +76,20 @@ const config = {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
+      backgroundImage: {
+        // Primary Green Gradient
+        "primary-green-gradient":
+          "linear-gradient(to right, hsl(142.1, 76.2%, 36.3%), hsl(142.1, 70.6%, 45.3%))",
+        // Subtle Background Gradient for Light Mode
+        "subtle-bg-light":
+          "linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 0%, 100%))",
+        // Subtle Background Gradient for Dark Mode
+        "subtle-bg-dark":
+          "linear-gradient(to bottom, hsl(20, 14.3%, 4.1%), hsl(24, 9.8%, 10%))",
+        // Accent and Interactive Elements Gradient
+        "accent-interactive":
+          "linear-gradient(to right, hsl(240, 4.8%, 95.9%), hsl(142.4, 71.8%, 29.2%))",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
