@@ -6,7 +6,8 @@ export default function Home() {
       className="flex min-h-screen flex-col items-center justify-between p-24 
       bg-accent-interactive"
     >
-      <h1 className="text-3xl">Mister</h1>
+      <h1 className="text-3xl font-plex italic">Test</h1>
+      <h2 className="text-3xl font-plex bold">font</h2>
       <Button>Click me</Button>
     </main>
   );

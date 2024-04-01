@@ -74,7 +74,24 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
+        //sans: ["var(--font-sans)", ...fontFamily.sans],
+        plex: [
+          "var(--font-ibmplexsans-regular)",
+          "var(--font-ibmplexsans-italic)",
+          // Include system default fonts as fallbacks
+          "ui-sans-serif",
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          '"Segoe UI"',
+          "Roboto",
+          '"Helvetica Neue"',
+          "Arial",
+          "sans-serif",
+          '"Apple Color Emoji"',
+          '"Segoe UI Emoji"',
+          '"Segoe UI Symbol"',
+        ],
       },
       backgroundImage: {
         // Primary Green Gradient
