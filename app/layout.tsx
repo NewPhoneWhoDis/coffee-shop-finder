@@ -31,12 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={cn(
-          "min-h-screen bg-background antialiased",
-          ibmPlexSansBold.variable
-        )}
-      >
+      <body className={cn(ibmPlexSansBold.variable, "bg-accent-interactive")}>
         {children}
       </body>
     </html>
