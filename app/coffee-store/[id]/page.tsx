@@ -13,12 +13,12 @@ export default function Page({ params }: PageProps) {
     <div>
       Coffee Store: {id}
       <div className="mb-2 mt-24 text-lg font-bold">
-        <Link href="/" passHref>
-          <a
-            className={buttonVariants({ variant: "default", size: "default" })}
-          >
-            Back to Home
-          </a>
+        <Link
+          href="/"
+          passHref
+          className={buttonVariants({ variant: "default", size: "default" })}
+        >
+          Back to Home
         </Link>
       </div>
     </div>
