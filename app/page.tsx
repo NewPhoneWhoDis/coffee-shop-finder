@@ -1,5 +1,6 @@
 import Banner from "@/components/custom/banner.client";
 import Link from "next/link";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function Home() {
   const coffeeStoreId = "test-coffee-store";
@@ -14,10 +15,13 @@ export default function Home() {
       </main>
 
       <p className="text-xl ml-4 font-bold"> Coffee Shops in {cityName}</p>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-        <div className="ml-4">test</div>
-        <div>test 2</div>
-        <div>test 3</div>
+        {Array.from({ length: 5 }).map((_, index) => (
+          <Card key={index}>
+            <CardContent>Test street: 322 Adress: 233 City: 313</CardContent>
+          </Card>
+        ))}
       </div>
     </div>
   );
